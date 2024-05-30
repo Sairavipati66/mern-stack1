@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm" method="get" action="#">
+        <table border="1">
+            <tr>
+                <td>full Name</td>
+                <td><input type="text" name="fullname" valu=""/></td>
+            </tr>
+            <tr>
+                <td>email Adress</td>
+                <td><input type="Email" name="emailadress" valu=""/></td>
+            </tr>
+            <tr>
+                <td>mobile Number</td>
+                <td><input type="type" name="mobilenumber" valu=""/></td>
+            </tr>
+            <tr>
+                <td>date of Birth</td>
+                <td><input type="date" name="dob" valu=""/></td>
+            </tr>
+            <tr>
+                <td>age</td>
+                <td><input type="number" name="age" valu=""/></td>
+            </tr>
+            <tr>
+                <td>gender</td>
+                <td><input type="radio" name="gender" valu="male" checked/>Male
+                <input type="radio" name="gender" value="female"/>Female</td>
+            </tr>
+            <tr>
+                <td>skills</td>
+                <td><input type="checkbox" name="skills" valu="html"/>Html
+                    <input type="checkbox" name="skills" value="Javascript"/>Javascript
+                    <input type="checkbox" name="skills" value="Reactjs"/>Reactjs
+                    <input type="checkbox" name="skills" value="Nodejs"/>Nodejs
+                    <input type="checkbox" name="skills" value="Mongodb"/>Mongodb
+                    <input type="checkbox" name="skills" value="Other"/>Other
+                </td>
+            </tr>
+            
+                <td>country</td>
+                <td>
+                    <select name="country">
+                        <choose value="">choose any country</choose>
+                        <option value="india">india</option>
+                        <option value="USA">USA</option>
+                        <option value="ENG">ENG</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Other">other</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>select a File / Photo</td>
+                <td><input type="file" name="fileupload"/></td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td><textarea name="description"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="Submit" name="submit" value="subit"/></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
