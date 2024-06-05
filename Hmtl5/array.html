@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array and Object Modification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Array and Object Modification</h2>
+
+  <script>
+    var originalArray = [1, 2, 3, 4, 5];
+
+    function modifyArrayByReference(arr) {
+      arr.push(6);
+    }
+
+    function modifyArrayByValue(arr) {
+      var newArray = arr.slice();
+      newArray.push(6);
+      return newArray;
+    }
+
+    var originalObject = { a: 1, b: 2, c: 3 };
+
+    function modifyObjectByReference(obj) {
+      obj.d = 4;
+    }
+
+    function modifyObjectByValue(obj) {
+      var newObj = Object.assign({}, obj); 
+      newObj.d = 4;
+      return newObj;
+    }
+
+    console.log("Original Array:", originalArray);
+    console.log("Original Object:", originalObject);
+
+    modifyArrayByReference(originalArray);
+    console.log("Array Modified by Reference:", originalArray);
+
+    var modifiedArray = modifyArrayByValue(originalArray);
+    console.log("Array Modified by Value:", modifiedArray);
+
+    modifyObjectByReference(originalObject);
+    console.log("Object Modified by Reference:", originalObject);
+
+    var modifiedObject = modifyObjectByValue(originalObject);
+    console.log("Object Modified by Value:", modifiedObject);
+  </script>
+
+</body>
+</html>
